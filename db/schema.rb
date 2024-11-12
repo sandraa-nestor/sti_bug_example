@@ -27,5 +27,5 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_11_212805) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "marks", "students"
+  add_foreign_key "marks", "users", column: "student_id"
 end
